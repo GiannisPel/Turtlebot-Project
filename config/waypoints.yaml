@@ -1,0 +1,22 @@
+# All positions use the map frame. Distances are metres and yaw is in radians.
+frame_id: map
+move_base_action: /move_base
+server_timeout: 60.0
+goal_timeout: 180.0
+continue_on_failure: false
+
+waypoints:
+  - name: waypoint_1
+    x: 0.7
+    y: 1.6
+    yaw: 0.675244
+
+  - name: waypoint_2
+    x: 5.7
+    y: -3.9
+    yaw: -0.918286
+
+  - name: waypoint_3
+    x: -6.0
+    y: -3.1
+    yaw: -0.592557
