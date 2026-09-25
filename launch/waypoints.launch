@@ -1,0 +1,12 @@
+<launch>
+  <arg name="waypoints_file" default="$(find turtlebot3_waypoint_navigation)/config/waypoints.yaml"/>
+
+  <node
+    pkg="turtlebot3_waypoint_navigation"
+    type="waypoint_navigation.py"
+    name="waypoint_navigation"
+    output="screen"
+    required="true">
+    <rosparam command="load" file="$(arg waypoints_file)"/>
+  </node>
+</launch>
